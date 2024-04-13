@@ -1,0 +1,11 @@
+(library
+ (public_name uuseg)
+ (wrapped false)
+ (libraries uucp)
+ (modules
+  uuseg_base uuseg_buf uuseg_grapheme_cluster uuseg_line_break
+  uuseg uuseg_sentence uuseg_string uuseg_word))
+
+(deprecated_library_name
+ (old_public_name uuseg.string)
+ (new_public_name uuseg))
